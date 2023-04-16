@@ -7,7 +7,8 @@ However, OnBot Java requires the physical robot to be present in order to build 
 The purpose of this project is to provide a [development container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers) that <u>runs in the cloud</u>, allowing programmers to build their projects anywhere - with or without the robot.  
 Additionally, the development container is configured to run on the latest release of the Ubuntu distribution, providing access version control and additional software packages.  
 > **Note**
-> This is not a robot simulator.
+> This is not a robot simulator.  
+> Nor does it provide a method of installing the robot controller APK, though you could try to download it and manually push to the phone or Control Hub.
 
 ## Getting Started
 > **Note**
@@ -46,7 +47,7 @@ Additionally, the development container is configured to run on the latest relea
 `build.sh` - The build script. By default, Gradle is set to debug build the TeamCode of the currently active file in the editor using at most two worker threads.
 
 ## Tips
-- If Codespace storage becomes an issue, run the following command to clean the build: `cd [dir] && ./gradlew clean` (replace `[dir]` with the folder name of the project) or truncate any git commit history to include only the most recent commits.
+- If Codespace storage becomes an issue, run the following command to clean the build: `cd [dir] && ./gradlew clean` (replace [`dir`] with the folder name of the project) or truncate any git commit history to include only the most recent commits.
 - Stop the Codespace when it's not being used to prevent incurring unintended usage (click Codespaces in the bottom left corner). Codespaces will automatically timeout after thirty minutes of inactivity.
 
 ___
