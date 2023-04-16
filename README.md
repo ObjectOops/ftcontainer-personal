@@ -1,10 +1,11 @@
 # ftcontainer
+![image](https://user-images.githubusercontent.com/92550885/232341709-e8e35d97-c334-4ab5-a9e5-e60363a2a2d7.png)
 🔨 Build the [FtcRobotController](https://github.com/FIRST-Tech-Challenge/FtcRobotController) in a development container on *practically* any device.
 
 ## About
 Android Studio is the recommended IDE for developing with the FTC SDK, with OnBot Java being an alternative when Android Studio isn't available.  
 However, OnBot Java requires the physical robot to be present in order to build the SDK, and lacks version control.  
-The purpose of this project is to provide a [development container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers) that <u>runs in the cloud</u>, allowing programmers to build their projects anywhere - with or without the robot.  
+The purpose of this project is to provide a [development container](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers) that **runs in the cloud**, allowing programmers to build their projects anywhere - with or without the robot.  
 Additionally, the development container is configured to run on the latest release of the Ubuntu distribution, providing access version control and additional software packages.  
 > **Note**
 > This is not a robot simulator.  
