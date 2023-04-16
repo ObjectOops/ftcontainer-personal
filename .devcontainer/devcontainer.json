@@ -1,0 +1,14 @@
+{
+    "name": "Android SDK Container",
+    // "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "build": {
+        "dockerfile": "./Dockerfile",
+        "context": "."
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "installGradle": "true"
+        }
+    },
+    "postCreateCommand": "sh /usr/local/post-create-env.sh"
+}
