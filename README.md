@@ -27,11 +27,8 @@ Additionally, the development container is configured to run on the latest relea
     - You can access your created Codespaces by navigating to Codespaces menu from the GitHub dashboard.
     - Subsequent startups of a Codespace will take under half a minute.
 4. Expand the `FtcRobotController` directory and navigate to `TeamCode/.../teamcode`, or delete the pre-cloned project and clone your own repository.
-    - For security, Codespaces are prevented from access the contents of private repositories aside from the one they're created in.
-    - You can create a personal access token to enable access to other repositories. See [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token#using-a-personal-access-token-on-the-command-line) for how to use PATs. Scroll up on the page for details on how to create PATs.
-> **Note**
-> The command line / terminal is the black text box that welcomes you once the Codespace has been created.  
-> If you close out of the terminal, it can be opened again by navigating to the [`Terminal`] tab in the Codespace.
+    - By default and for security, Codespaces are prevented from accessing the contents of private repositories aside from the one they're created in.
+    - See [here](https://docs.github.com/en/codespaces/managing-your-codespaces/managing-repository-access-for-your-codespaces) for how to add permissions.
 5. Open the README file in `teamcode` or create an OpMode.
 6. Use the shortcut <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>B</kbd>, or the build shortcut, to run the build task.
     - Be sure that a file in the project to be built is actively open in the Codespace editor (VSCode), as the build task uses this information to determine which project to build.
@@ -50,7 +47,7 @@ Additionally, the development container is configured to run on the latest relea
 ## Tips
 - If Codespace storage becomes an issue, run the following command to clean the build: `cd [dir] && ./gradlew clean` (replace [`dir`] with the folder name of the project) or truncate any git commit history to include only the most recent commits.
 - Stop the Codespace when it's not being used to prevent incurring unintended usage (click Codespaces in the bottom left corner). Codespaces will automatically timeout after thirty minutes of inactivity.
-- To update the container, pull the latest commit with `git pull`, **or** click the sync button near the bottom-left corner (ensure that the editor is opened to this README file when doing the latter so this container's repository is focused instead of the robot controller's).
+- To update the container, click the sync button near the bottom-left corner (ensure that the editor is opened to this README file when doing the latter so this container's repository is focused instead of the robot controller's), **or** pull the latest commit with `git pull`.
 
 ___
 
