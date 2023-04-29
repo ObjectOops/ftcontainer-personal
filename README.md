@@ -40,6 +40,10 @@ Additionally, the development container is configured to run on the latest relea
 > You will not be charged by default if your usage exceeds the amount allotted.
 
 ## Additional Options
+### Build with GUI
+If if a GUI is preferred for building, create your Codespace on the [gradle-extension](https://github.com/8696-Trobotix/ftcontainer/tree/gradle-extension) branch.  
+Please read the README in this branch for instructions, clarifications, and limitations.
+### Others
 `.devcontainer/Dockerfile` - The platform-tools and tools Android SDK packages are not installed by default. Uncomment their respective lines here and rebuild the container to add them.  
 `.devcontainer/post-create-env.sh` - Configure additional environment variables here, such as adding the path of the packages above to PATH.  
 `build.sh` - The build script. By default, Gradle is set to debug build the `TeamCode` of the currently active file in the editor using at most two worker threads. When building a module not named `TeamCode`, that module's name should be used in place of `TeamCode` in the build script and in `.vscode/tasks.json`.
