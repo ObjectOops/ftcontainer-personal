@@ -49,6 +49,12 @@ Please read the README in this branch for instructions, clarifications, and limi
 `build.sh` - The build script. By default, Gradle is set to debug build the `TeamCode` of the currently active file in the editor using at most two worker threads. When building a module not named `TeamCode`, that module's name should be used in place of `TeamCode` in the build script and in `.vscode/tasks.json`.
 
 ## Tips
+- Build performance can possibly be improved by disabling the following extensions:
+    - Debugger for Java
+    - Language Support for Java...
+    - Maven for Java
+    - Project Manager for Java
+    - Test Runner for Java
 - If Codespace storage becomes an issue, run the following command to clean the build: `cd [dir] && ./gradlew clean` (replace [`dir`] with the folder name of the project) or truncate any git commit history to include only the most recent commits.
 - Stop the Codespace when it's not being used to prevent incurring unintended usage (click Codespaces in the bottom left corner). Codespaces will automatically timeout after thirty minutes of inactivity.
 - To update the container, click the sync button near the bottom-left corner (ensure that the editor is opened to this README file when doing the latter so this container's repository is focused instead of the robot controller's), **or** pull the latest commit with `git pull`.
