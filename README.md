@@ -19,6 +19,8 @@ Additionally, the development container is configured to run on the latest relea
 0. Prerequisites:
     - A GitHub account.
 1. On this repository's [page](https://github.com/8696-Trobotix/ftcontainer), click on [`<> Code ⯆`].
+    - Or click this and skip step two:  
+    [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/8696-Trobotix/ftcontainer?quickstart=1)
 2. Navigate to [`Codespaces`].
 3. Create a Codespace on main.
     - Initial configuration usually takes a couple minutes.
@@ -37,7 +39,7 @@ Additionally, the development container is configured to run on the latest relea
     - If the build fails the first time due to the Gradle Daemon "disappearing unexpectedly", try again.
 > **Note**
 > Codespaces is a free service, but has usage limits. You can view your usage [here](https://github.com/settings/billing).  
-> You will not be charged by default if your usage exceeds the amount allotted.
+> You will not be charged by default if your usage exceeds the amount allotted, assuming no payment information is provided for your account.
 
 ## Additional Options
 ### Build with GUI
