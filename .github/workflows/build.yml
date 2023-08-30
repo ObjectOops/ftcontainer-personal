@@ -1,0 +1,27 @@
+name: Test Build
+
+on:
+  push:
+    branches:
+    - main
+    - workflow
+  pull_request:
+    branches:
+    - main
+    - workflow
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up devcontainer, copy sample OpMode, and build it.
+      uses: devcontainers/ci@v0.3
+      with:
+        runCmd: |
+          ls && 
+          sudo cp 'FtcRobotController/FtcRobotController/src/main/java/org/firstinspires/ftc/robotcontroller/external/samples/BasicOpMode_Linear.java' 'FtcRobotController/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/' && 
+          cd FtcRobotController && sudo sh ../build.sh
