@@ -10,5 +10,21 @@
             "installGradle": "true"
         }
     },
+    "customizations": {
+        "codespaces": {
+            "repositories": {
+                "8696-Trobotix/mollusc": {
+                    "permissions": {
+                        "contents": "write"
+                    }
+                },
+                "8696-Trobotix/centerstage": {
+                    "permissions": {
+                        "contents": "write"
+                    }
+                }
+            }
+        }
+    },
     "postCreateCommand": "sudo sh /usr/local/post-create-env.sh"
 }
