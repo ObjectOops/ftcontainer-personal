@@ -13,12 +13,12 @@
     "customizations": {
         "codespaces": {
             "repositories": {
-                "8696-Trobotix/mollusc": {
+                "ObjectOops/mollusc": {
                     "permissions": {
                         "contents": "write"
                     }
                 },
-                "8696-Trobotix/centerstage": {
+                "ObjectOops/centerstage": {
                     "permissions": {
                         "contents": "write"
                     }
