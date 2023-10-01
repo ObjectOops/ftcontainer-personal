@@ -1,0 +1,3 @@
+[submodule "centerstage-personal"]
+	path = centerstage-personal
+	url = ./centerstage-personal/
