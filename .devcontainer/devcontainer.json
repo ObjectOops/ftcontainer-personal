@@ -13,12 +13,12 @@
     "customizations": {
         "codespaces": {
             "repositories": {
-                "ObjectOops/mollusc": {
+                "ObjectOops/mollusc-personal": {
                     "permissions": {
                         "contents": "write"
                     }
                 },
-                "ObjectOops/centerstage": {
+                "ObjectOops/centerstage-personal": {
                     "permissions": {
                         "contents": "write"
                     }
