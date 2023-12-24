@@ -14,6 +14,11 @@
     "customizations": {
         "codespaces": {
             "repositories": {
+                "ObjectOops/HAT-personal": {
+                    "permissions": {
+                        "contents": "write"
+                    }
+                },
                 "ObjectOops/mollusc-personal": {
                     "permissions": {
                         "contents": "write"
